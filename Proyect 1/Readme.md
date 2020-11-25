@@ -1,4 +1,4 @@
-# Proyect 1 (Spanish)
+# Project 1 (Spanish)
 
 Basic EDA and first basic Machine Learning regression models, for predicting house pricing
 
