@@ -2,4 +2,4 @@
 
 Basic EDA and first basic Machine Learning regression models, for predicting house pricing
 
-The proyect data is from Properati 
+The proyect data is from Properati and can be checked inside the proyect notebook.
