@@ -1,0 +1,615 @@
+/* Custom App CSS Below --------------------------------- */
+/*Fonts ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url('webfonts/Roboto/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url('webfonts/Roboto/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('webfonts/Roboto/Roboto-Regular.ttf');
+}
+
+
+
+/* Main Layout ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+body {
+  background-color: #ffffff;
+  font-family: "Roboto"; 
+  color: #252525;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3, h4, h5 {
+  font-family: "Roboto-Medium";
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-size: 21px;
+}
+
+p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 15px;
+}
+a {
+  text-decoration: none;
+}
+.bg-grey{
+  background-color: #31302F;
+  /*background: linear-gradient(to bottom, #575554 20%, #31302F)*/
+}
+.text-padding{
+  padding: 5px;
+}
+/* Table Layout ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.div-for-dash-tables{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+/* Graph Layout ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.div-for-charts{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+#histogram {
+  flex-grow: 1
+}
+#map-graph {
+  flex-grow: 1
+}
+.mapboxgl-canvas, .mapboxgl-map {
+  min-width: 100%;
+}
+/* Graph Control Objects ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.div-user-controls {
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 64px;
+}
+.div-for-dropdown {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.div-for-map{
+  padding: 12px;
+}
+.div-for-table{
+  padding: 30px;
+  overflow : auto;
+}
+
+.div-for-table-alertas {
+  font-size: 13px !important;
+  overflow-y: auto;
+}
+.div-for-paragraphs{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.div-for-bar-chart{
+  padding: 12px;
+  margin: auto;
+}
+.div-for-radio {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.div-for-input {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.div-for-nav-yellow {
+  font-size: 15px;
+  height: 80px;
+  display: flex;
+  background-color: #7daaee !important;
+  font-weight: bold !important;
+}
+
+.div-for-nav-white {
+  font-size: 15px;
+  height: 80px;
+  display: flex;
+  background-color: #f8f9fa !important;
+  font-weight: bold !important;
+  box-shadow: 0px 0px 12px 0px rgba(34, 34, 34, 0.07);
+}
+
+.div-for-alerta-transparencia{
+  background-color:#27a2e88a;
+  padding-bottom: 4rem !important;
+}
+
+.div-for-alerta-sobrecosto{
+  background-color:#3f3f3f59;
+  padding-bottom: 4rem !important;
+}
+
+.div-for-alerta-concentracion{
+  background-color: #ab80ca;
+  padding-bottom: 4rem !important;
+}
+
+.div-for-alerta-financiacion{
+  background-color: #f8e380;
+  padding-bottom: 4rem !important;
+}
+
+.div-for-graph-card {
+  padding: 5rem !important;
+}
+
+.div-for-graph-border {
+  box-shadow: 0px 0px 12px 0px rgba(34, 34, 34, 0.07);
+}
+
+.div-for-graph-individual {
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
+.div-for-image-ocp {
+  height: 60px;
+}
+
+.div-for-image-github {
+  height: 40px;
+}
+
+.div-for-image-offcorss {
+  height: 105px;
+}
+
+.div-for-image-correlation {
+  height: 105px;
+}
+
+.div-for-image-mintic {
+  height: 75px;
+}
+
+.div-for-image-team {
+  height: 150px;
+}
+
+.div-for-quienes-somos {
+  background-color: #e9e8e8 !important;
+}
+
+.div-for-member {
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 12px 0px rgba(34, 34, 34, 0.07);
+  padding: 30px 20px;
+  background: #fff;
+}
+
+.div-for-member img {
+  max-width: 60%;
+  border-radius: 50%;
+  margin: 0 0 30px 0;
+}
+
+.div-for-member h4 {
+  max-width: 60%;
+  border-radius: 50%;
+  margin: 0 0 30px 0;
+}
+
+.div-for-member .social {
+  margin-top: 15px;
+  font-size: 20px;
+  color: grey;
+}
+
+.div-for-form {
+  width: 100%;
+  box-shadow: 0px 0px 12px 0px rgba(34, 34, 34, 0.07);
+  padding: 30px;
+  background: #f3f3f3;
+}
+
+.back-home {
+  background-image: url("/../assets/backgrounds/home_image_a.jpg") !important;
+  background-position-y: bottom;
+  background-size: cover;
+}
+
+
+.spinner {
+  width: 70px;
+  height: 70px;
+  margin: 100px auto;
+  background-color: #7ea4f7;
+
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+.div-for-form .form-group {
+  padding-bottom: 8px;
+}
+
+.form-row{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.75-em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.text-form-titles{
+  font-size: 15px;
+  text-align: left;
+}
+
+
+.text-mail-contact {
+  color: grey;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.title-visor {
+  border-bottom: 5px solid #51a5f5;
+}
+.titles-metodologia{
+  font-size: 25px;
+  font-family: "Roboto-Medium" !important;
+  margin-bottom: 1rem;
+}
+
+.cont-fuentes {
+  padding-left: 6rem !important;
+}
+
+.btn-ver-alerta {
+  border: 0 !important;
+  background-color: #5fb4fa;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  background-color: #59a2f7;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 2px 2px 1px 1px rgb(34 34 34 / 17%);
+}
+
+.dot-gray {
+  height: 20px;
+  width: 20px;
+  background-color: #898989;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 2px 2px 1px 1px rgb(34 34 34 / 17%);
+}
+
+.mai-datatable-footer {
+  margin: 0;
+  padding: 15px 3px 13px;
+  background-color: #f7f7f7;
+  border-top: 1px solid #eceeef;
+  font-size: 15px;
+}
+
+.text-home-title {
+  font-size: 25px;
+}
+
+.text-h2 {
+  font-size: 20px;
+}
+
+.text-steps {
+  font-size: 20px;
+  text-align-last: center;
+  background-color: #495057;
+  color: white;
+}
+
+.text-names-team {
+  font-size: 20px;
+}
+
+.text-subtitle-team {
+  font-size: 13px;
+  font-style: italic;
+  display: block;
+}
+
+.text-description-team {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #aaaaaa;
+}
+
+.text-home-paragraph {
+  font-size: 15px;
+}
+
+.text-header-table {
+  font-size: 15px;
+}
+
+
+.buttons-footer-table{
+  justify-content: flex-end;
+  display: flex;
+}
+
+.buttons-footer{
+  padding: .5rem .75rem;
+  border-radius: 0;
+  font-size: 12px;
+}
+
+.main-content-table{
+  background-color: #F4F4F4;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.dropdown-table {
+  background-color: #dbdbdb8e;
+  font-size: 12px;
+}
+.border-bottom-yellow {
+  border-bottom: 4px solid #70b1fc;
+}
+
+.card-sources-text {
+  margin-bottom: 0;
+}
+
+.card-sources {
+  background: #ffd6086e;
+  border: 1px solid #59a0f1;
+  padding: 6px;
+}
+
+.card-sources:hover {
+  background: #eef7fc;
+}
+
+.div-for-slider {
+  width: 100%;
+  text-align: center;
+}
+.paragraph-alerta {
+  padding-left: 9rem !important;
+  padding-right: 2.5rem !important;
+}
+
+.div-for-tab {
+  font-family: "Roboto";
+  font-size: 15px;
+  color: grey;
+}
+
+
+.logo {
+  height: 100px;
+  /*padding-bottom: 12px;*/
+  /*margin-left: 8px;*/
+}
+.font-home-m {
+  font-size: 1.6rem;
+}
+
+.font-medium{
+  font-family: "Roboto-Medium" !important;
+}
+
+.font-bold{
+  font-family: "Roboto-Bold" !important;
+  margin-top: 0.1rem !important;
+}
+
+.copyright{
+  text-align: center;
+}
+
+.Select-control, .Select-menu-outer, .Select-multi-value-wrapper, .select-up, .is-open .Select-control {
+  background-color: #F7F7F7 !important;
+  color:#4f4f4f;
+
+}
+
+#bar-selector .Select-multi-value-wrapper{
+  max-height: 82px;
+  overflow-y: auto;
+  margin: 0px 0px -3px 0px;
+}
+
+.Select-control{
+  border: 0.5px solid #dbdbdb44;
+}
+
+.has-value.Select--single>.Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label {
+  color: white;
+}
+._dash-app-content {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+.has-value.Select--single>.Select-control .Select-value .Select-value-label, .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label{
+  color: #4f4f4f;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
+#date {
+  background-color: #1e1e1e !important;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #dbdbdb;
+  border: 0.5px solid #dbdbdb44;
+}
+
+#date-picker{
+  width: 100%;
+}
+
+._dash-undo-redo {
+  display: none;
+}
+.DateInput.DateInput_1{
+  width: 100%;
+}
+.SingleDatePickerInput__withBorder{
+  border:none;
+}
+
+.DateInput.DateInput_1 {
+  background-color: #1e1e1e !important;
+}
+
+.SingleDatePickerInput__withBorder {
+  border-radius: 3px;
+  color: #dbdbdb;
+  background: #1e1e1e !important;
+  background-color: #1e1e1e !important;
+}
+.SingleDatePickerInput.SingleDatePickerInput_1.SingleDatePickerInput__withBorder.SingleDatePickerInput__withBorder_2 {
+  border: 0.0px solid #dbdbdb;
+  display: block;
+}
+.SingleDatePicker_1 {
+  border: 0.0px solid #dbdbdb;
+  display: block;
+}
+
+.SingleDatePicker_picker, .SingleDatePicker_picker_1, .SingleDatePicker_picker__directionLeft,
+.SingleDatePicker_picker__directionLeft_2{
+  filter:invert(100%);
+}
+
+/* For Mobile Phones and small screens ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+@media only screen and (max-width: 768px) {
+  .four, .eight {
+      min-width: 100%;
+ }
+  h1, h2, h3, p {
+      text-align: center;
+ }
+  body {
+      display: block;
+      margin: 0px;
+      overflow-y: scroll;
+  }
+  .div-for-charts {
+      padding: 0px;
+      width: 100%;
+      text-align: center;
+ }
+
+ .div-for-dash-tables {
+      margin: 0px;
+ }
+
+ .div-user-controls {
+    padding: 32px;
+ }
+
+ .side-by-side{
+    display: inline-block;
+    width: 48%;
+  }
+
+
+ .side-by-side-right{
+    display: inline-block;
+    width: 48%;
+    float:right;
+  }
+  .div-for-charts{
+    margin: 0px;
+  }
+  .div-for-dash-tables{
+    margin: 0 auto;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px !important;
+  display: block !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #b6b6b6 !important;
+  border-radius: 10px !important;
+  display: block !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d8d8d870 !important;
+}
+
+.CalendarMonth_table td {
+  padding: unset;
+}
