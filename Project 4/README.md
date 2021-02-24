@@ -1,3 +1,3 @@
-# Project 3 (Spanish)
+# Project 4 (Spanish)
 
-Time series project and recomendation system project
+Continuing Project #2 Real State price prediction on Buenos Aires properties, using Neural Networks and LightGBM. Also, evaluating the models by predicting the price to properties of 2020.
